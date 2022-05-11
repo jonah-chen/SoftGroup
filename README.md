@@ -1,4 +1,17 @@
 # SoftGroup
+
+## Fork Details:
+
+Please perform the installation of all the dependencies first before running the inference.
+
+Add the scenes you want to be processed as `.ply` files with RGBXYZ info to the `custom/input` directory (In particular, this code is written for the RealSense cameras coordinate systems with the normal orientation).
+
+Also copy your trained model as `custom/input/model.pth` to perform the segmentation. Then run `bash run.sh` to perform inference on all scenes described by `.ply` files. The final results will be saved as `.ply` files in the `custom/output` directory. The intermediate results will be saved as well.
+
+To clean up the intermediate results, run `bash cleanup.sh`.
+
+## Original README
+
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/softgroup-for-3d-instance-segmentation-on/3d-instance-segmentation-on-scannetv2)](https://paperswithcode.com/sota/3d-instance-segmentation-on-scannetv2?p=softgroup-for-3d-instance-segmentation-on) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/softgroup-for-3d-instance-segmentation-on/3d-instance-segmentation-on-s3dis)](https://paperswithcode.com/sota/3d-instance-segmentation-on-s3dis?p=softgroup-for-3d-instance-segmentation-on) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/softgroup-for-3d-instance-segmentation-on/3d-object-detection-on-scannetv2)](https://paperswithcode.com/sota/3d-object-detection-on-scannetv2?p=softgroup-for-3d-instance-segmentation-on)
 ![Architecture](./docs/architecture.png)
 
